@@ -1,1 +1,24 @@
+<script>
+window.dataLayer = window.dataLayer || [];
 
+function gtag()
+{
+	dataLayer.push(arguments);
+}
+
+gtag("consent", "default", 
+{
+	ad_storage: "denied",
+	analytics_storage: "denied",
+	functionality_storage: "denied",
+	personalization_storage: "denied",
+	security_storage: "denied",
+	wait_for_update: 1500
+});
+
+gtag("set", "ads_data_redaction", true);
+
+dataLayer.push({"event": "defaultConsentsSet"});
+</script>
+
+<script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/xxxxxxxxxxxxxxxxx.js"></script>
